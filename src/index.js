@@ -1,4 +1,3 @@
-function toReadable(str){
-console.log(parseInt(str))
+module.exports = function toReadable (number) {
+
 }
-toReadable();
