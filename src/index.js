@@ -15,9 +15,10 @@ else if(str.length == 3){
 if (str[1] == 1){
     // if(str[2] == 0)result = toTen[parseInt(str[0])]+' hundred';
     // else 
-    result = (toTen[parseInt(str[0])]+' hundred' + ((str[2]=='0')?'':(' ' + other[parseInt(str[2])])));
+    result = (toTen[parseInt(str[0])]+' hundred ' + other[parseInt(str[2])]);
     console.log(result);
     console.log(str[2]);
+    console.log(str[1]);
 }
 else result = (toTen[parseInt(str[0])]+' hundred' + ((str[1]!='0')?(' ' + ten[parseInt(str[1])-1]):'') + ((str[2]!='0')?(' ' + toTen[parseInt(str[2])]):''));
 }
